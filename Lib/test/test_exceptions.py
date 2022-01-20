@@ -678,7 +678,6 @@ class ExceptionTests(unittest.TestCase):
             raise Exception()
         except Exception as e:
             self.assertTrue(e)
-            del e
         self.assertNotIn('e', locals())
 
     def testExceptionCleanupState(self):
